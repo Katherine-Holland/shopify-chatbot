@@ -3,7 +3,7 @@
 client_id = "a6d3e3baab38968b915b5ab7861f26b3"
 name = "ChatterBot"
 handle = "chatterbot-1"
-application_url = "https://4040-katherineho-shopifychat-vhyqtz9iu15.ws.codeinstitute-ide.net"
+application_url = "https://4040-katherineho-shopifychat-qsipy78v4p5.ws.codeinstitute-ide.net"
 embedded = true
 
 [build]
@@ -16,9 +16,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://4040-katherineho-shopifychat-vhyqtz9iu15.ws.codeinstitute-ide.net/auth/callback",
-  "https://4040-katherineho-shopifychat-vhyqtz9iu15.ws.codeinstitute-ide.net/auth/shopify/callback",
-  "https://4040-katherineho-shopifychat-vhyqtz9iu15.ws.codeinstitute-ide.net/api/auth/callback"
+  "https://4040-katherineho-shopifychat-qsipy78v4p5.ws.codeinstitute-ide.net/auth/callback",
+  "https://4040-katherineho-shopifychat-qsipy78v4p5.ws.codeinstitute-ide.net/auth/shopify/callback",
+  "https://4040-katherineho-shopifychat-qsipy78v4p5.ws.codeinstitute-ide.net/api/auth/callback"
 ]
 
 [webhooks]
