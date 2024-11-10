@@ -3,6 +3,7 @@ import { json, redirect } from "@remix-run/node";
 import { Form, useLoaderData } from "@remix-run/react";
 
 import { login } from "../../shopify.server";
+import Chatbot from "../../components/Chatbot"; // Import the Chatbot component
 
 import styles from "./styles.module.css";
 
@@ -52,6 +53,9 @@ export default function App() {
             its benefit to your customer.
           </li>
         </ul>
+
+        {/* Render the Chatbot component */}
+        <Chatbot />
       </div>
     </div>
   );
