@@ -1,5 +1,5 @@
 {
-  "include": ["env.d.ts", "**/*.ts", "**/*.tsx", "chatter-bot/app/utils/openai.js"],
+  "include": ["env.d.ts", "**/*.ts", "**/*.tsx", "/api/openai.ts", "/api/generate-chat-response.ts"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "strict": true,

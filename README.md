@@ -361,3 +361,15 @@ This template uses [Remix](https://remix.run). The following Shopify tools are a
 - [App extensions](https://shopify.dev/docs/apps/app-extensions/list)
 - [Shopify Functions](https://shopify.dev/docs/api/functions)
 - [Getting started with internationalizing your app](https://shopify.dev/docs/apps/best-practices/internationalization/getting-started)
+
+
+## FILES
+openai.js (utils/openai.js):
+
+This is where you set up the connection to OpenAI’s API, load the .env variables, and define the function to generate the chat response from OpenAI.
+generate-chat-response.js (pages/api/generate-chat-response.js):
+
+This is an API route in Next.js that receives the request from the frontend (Chatbot.jsx), processes the message using openai.js, and sends the response back.
+test-chatbot.tsx:
+
+This file is for testing purposes. It sends a test message to the backend and logs the response. It helps verify that your API route is working as expected.
