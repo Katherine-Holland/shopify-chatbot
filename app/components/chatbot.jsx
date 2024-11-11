@@ -1,23 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-// Define the types for message objects
-type Message = {
-  sender: 'user' | 'chatbot'; // Sender can either be 'user' or 'chatbot'
-  text: string; // Text is a string
-};
-
 const brandColors = {
   primaryColor: "#FF5733",
   backgroundColor: "#f9f9f9",
 };
 
 const Chatbot = () => {
-  // Explicitly type 'messages' as an array of Message objects
-  const [messages, setMessages] = useState<Message[]>([]);
-  const [inputValue, setInputValue] = useState<string>(""); // inputValue is a string
-  const [isLoading, setIsLoading] = useState<boolean>(false); // isLoading is a boolean
+  // Define the state variables without TypeScript types
+  const [messages, setMessages] = useState([]);
+  const [inputValue, setInputValue] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSendMessage = async (messageText: string) => {
+  const handleSendMessage = async (messageText) => {
     if (messageText.trim() === "") return; // If message is empty, do nothing
 
     // Add user message to the state

@@ -6,7 +6,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-export const generateChatResponse = async (message: string) => {
+export const generateChatResponse = async (message) => {
   try {
     const response = await openai.chat.completions.create({
       model: "gpt-3.5-turbo",

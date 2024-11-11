@@ -1,13 +1,14 @@
-import { json, ActionFunction } from '@remix-run/node';
+import { json } from '@remix-run/node';
 import { OpenAI } from 'openai';
 import dotenv from 'dotenv';
+
 dotenv.config();
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY || '',
 });
 
-export const action: ActionFunction = async ({ request }) => {
+export const action = async ({ request }) => {
   try {
     const { message } = await request.json();
 
